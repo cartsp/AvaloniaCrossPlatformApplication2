@@ -9,13 +9,25 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="AvaloniaCrossPlatformApplication2"
         TransparencyLevelHint="AcrylicBlur"
-        Background="Transparent"
-        ExtendClientAreaToDecorationsHint="True"
-        Padding="20">
+        Background="Transparent">
         <Design.DataContext>
                 <vm:MainWindowViewModel />
         </Design.DataContext>
-
+        <Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>                                 
+                <StackPanel Orientation="Vertical" MinWidth="150" MaxWidth="150" Grid.Column="0" Margin="0">
+                        <Panel Background="lightblue" MinWidth="150" MaxWidth="150" Height="200" Margin="0"></Panel>
+                        <ScrollViewer Background="blue" MinWidth="150" MaxWidth="150" Height="200" Margin="0"></ScrollViewer>
+                </StackPanel>
+                <Panel Grid.Column="1" Background="purple" Margin="0" MinWidth="300"></Panel>
+                <StackPanel Orientation="Vertical" Grid.Column="2" Width="200">
+                        <Panel Background="green" Height="600"></Panel>
+                </StackPanel>
+        </Grid>
         <!--<Panel>
                 <ExperimentalAcrylicBorder IsHitTestVisible="False">
                         <ExperimentalAcrylicBorder.Material>
