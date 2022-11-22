@@ -13,7 +13,7 @@
         ExtendClientAreaToDecorationsHint="True"
         Padding="20">
         <Design.DataContext>
-                <vm:MainViewModel />
+                <vm:MainWindowViewModel />
         </Design.DataContext>
 
         <!--<Panel>
