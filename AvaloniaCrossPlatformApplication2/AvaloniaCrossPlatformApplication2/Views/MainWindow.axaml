@@ -17,7 +17,7 @@
         </Design.DataContext>
         <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="*, Auto">
                 <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="0">
-                        <Panel Background="Black" MinWidth="240" MaxWidth="240" Height="280" Margin="0">
+                        <Panel Background="Black" MinWidth="235" MaxWidth="235" Height="280" Margin="0">
                                 <Grid Margin="15,10,0,0" RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, *" ColumnDefinitions="Auto, *">
                                         <material:MaterialIcon Grid.Row="0" Grid.Column="0" Kind="DotsHorizontal" Height="30" Width="30" Foreground="white"></material:MaterialIcon>
                                         <material:MaterialIcon Grid.Row="1" Grid.Column="0" Kind="Home" Height="30" Width="30" Foreground="white"></material:MaterialIcon>
@@ -26,14 +26,14 @@
                                         <Label Grid.Column="1" Grid.Row="2" FontWeight="Bold" Padding="10,0,0,0" Margin="0, 10" Foreground="gray">Search</Label>
                                         <material:MaterialIcon Grid.Row="3" Grid.Column="0" Kind="Dresser" Height="30" Width="30" Foreground="gray"></material:MaterialIcon>
                                         <Label Grid.Column="1" Grid.Row="3" FontWeight="Bold" Padding="10,0,0,0" Margin="0, 10" Foreground="gray">Your Library</Label>
-                                        <material:MaterialIcon Grid.Row="4" Grid.Column="0" Kind="PlusBox" Margin="0,25,0,0" Height="30" Width="30" Foreground="gray"></material:MaterialIcon>
-                                        <Label Grid.Column="1" Grid.Row="4" FontWeight="Bold" Padding="10,0,0,0" Margin="0, 31, 0 ,0" Foreground="gray">Create Playlist</Label>
+                                        <material:MaterialIcon Grid.Row="4" Grid.Column="0" Kind="PlusBox" Margin="0,35,0,0" Height="30" Width="30" Foreground="gray"></material:MaterialIcon>
+                                        <Label Grid.Column="1" Grid.Row="4" FontWeight="Bold" Margin="5, 38, 0 ,0" Foreground="gray">Create Playlist</Label>
                                         <material:MaterialIcon Grid.Row="5" Grid.Column="0" Kind="HeartBox" Height="30" Width="30" Foreground="gray"></material:MaterialIcon>
-                                        <Label Grid.Column="1" Grid.Row="5" FontWeight="Bold" Padding="10,0,0,0" Margin="0, 10" Foreground="gray">Liked Songs</Label>
+                                        <Label Grid.Column="1" Grid.Row="5" FontWeight="Bold" Padding="10,0,0,0" Margin="0, 15" Foreground="gray">Liked Songs</Label>
                                         <Separator Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2" Background="#282828" Width="200" Margin="0,0,15,0"/>
                                 </Grid>
                         </Panel>
-                        <ScrollViewer Background="blue" MinWidth="240" MaxWidth="200" Height="200" Margin="0" VerticalScrollBarVisibility="Visible"></ScrollViewer>
+                        <ScrollViewer Background="blue" MinWidth="235" MaxWidth="200" Height="200" Margin="0" VerticalScrollBarVisibility="Visible"></ScrollViewer>
                 </StackPanel>
                 <Rectangle Grid.Column="1" Grid.Row="0" Margin="0" MinWidth="100">
                         <Rectangle.Fill>
