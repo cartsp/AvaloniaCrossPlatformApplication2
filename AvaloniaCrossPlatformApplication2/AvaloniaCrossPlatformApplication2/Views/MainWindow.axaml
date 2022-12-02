@@ -5,28 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:AvaloniaCrossPlatformApplication2.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        MinHeight="300" MinWidth="800"
         x:Class="AvaloniaCrossPlatformApplication2.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Title="AvaloniaCrossPlatformApplication2"
+        Title="Spotify"
         TransparencyLevelHint="AcrylicBlur"
         Background="Transparent">
         <Design.DataContext>
                 <vm:MainWindowViewModel />
         </Design.DataContext>
-        <Grid>
-                <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                </Grid.ColumnDefinitions>                                 
-                <StackPanel Orientation="Vertical" MinWidth="150" MaxWidth="150" Grid.Column="0" Margin="0">
-                        <Panel Background="lightblue" MinWidth="150" MaxWidth="150" Height="200" Margin="0"></Panel>
-                        <ScrollViewer Background="blue" MinWidth="150" MaxWidth="150" Height="200" Margin="0"></ScrollViewer>
+        <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="*, Auto">
+                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="0">
+                        <Panel Background="lightblue" MinWidth="200" MaxWidth="200" Height="200" Margin="0"></Panel>
+                        <ScrollViewer Background="blue" MinWidth="200" MaxWidth="200" Height="200" Margin="0"></ScrollViewer>
                 </StackPanel>
-                <Panel Grid.Column="1" Background="purple" Margin="0" MinWidth="300"></Panel>
-                <StackPanel Orientation="Vertical" Grid.Column="2" Width="200">
-                        <Panel Background="green" Height="600"></Panel>
+                <Rectangle Grid.Column="1" Grid.Row="0" Margin="0" MinWidth="100">
+                        <Rectangle.Fill>
+                                <LinearGradientBrush StartPoint="0%,0%" EndPoint="100%,100%">
+                                        <GradientStop Color="#281667" Offset="0.0" />
+                                        <GradientStop Color="#181823" Offset="1.0" />
+                                </LinearGradientBrush>
+                        </Rectangle.Fill>
+                </Rectangle>
+                <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="2" Width="200">
+                        <Panel Background="green" Height="200"></Panel>
                 </StackPanel>
+                <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" RowDefinitions="Auto, Auto">
+                        <Rectangle Fill="Yellow" Height="50" Grid.Row="0"></Rectangle>
+                        <Rectangle Fill="Orange" Height="50" Grid.Row="1"></Rectangle>
+                </Grid>
         </Grid>
         <!--<Panel>
                 <ExperimentalAcrylicBorder IsHitTestVisible="False">
