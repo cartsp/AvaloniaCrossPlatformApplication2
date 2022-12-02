@@ -3,6 +3,7 @@
         xmlns:vm="using:AvaloniaCrossPlatformApplication2.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:material="using:Material.Icons.Avalonia"
         xmlns:views="clr-namespace:AvaloniaCrossPlatformApplication2.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         MinHeight="300" MinWidth="800"
@@ -16,7 +17,15 @@
         </Design.DataContext>
         <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="*, Auto">
                 <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="0">
-                        <Panel Background="lightblue" MinWidth="200" MaxWidth="200" Height="200" Margin="0"></Panel>
+                        <Panel Background="Black" MinWidth="200" MaxWidth="200" Height="200" Margin="0">
+                                <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="Auto, *">
+                                        <material:MaterialIcon Grid.Row="0" Grid.Column="0" Kind="Home" Margin="10, 0, 10,0" Height="30" Width="30" Foreground="white"></material:MaterialIcon>
+                                        <Label Grid.Column="1" Grid.Row="0" FontWeight="Bold" Padding="0,4,0,0" Margin="0, 20">Home</Label>
+                                        <material:MaterialIcon Grid.Row="1" Grid.Column="0" Kind="Magnify" Margin="10, 0,0,0" Height="30" Width="30" Foreground="white"></material:MaterialIcon>
+                                        <Label Grid.Column="1" Grid.Row="1" FontWeight="Bold" Padding="0,4,0,0" Margin="0, 20">Search</Label>
+                                </Grid>
+                               
+                        </Panel>
                         <ScrollViewer Background="blue" MinWidth="200" MaxWidth="200" Height="200" Margin="0"></ScrollViewer>
                 </StackPanel>
                 <Rectangle Grid.Column="1" Grid.Row="0" Margin="0" MinWidth="100">
