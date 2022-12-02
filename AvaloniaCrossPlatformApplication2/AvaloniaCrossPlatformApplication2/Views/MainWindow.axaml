@@ -18,11 +18,14 @@
         <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="*, Auto">
                 <StackPanel Orientation="Vertical" Grid.Row="0" Grid.Column="0" Margin="0">
                         <Panel Background="Black" MinWidth="200" MaxWidth="200" Height="200" Margin="0">
-                                <Grid RowDefinitions="Auto, Auto, Auto" ColumnDefinitions="Auto, *">
-                                        <material:MaterialIcon Grid.Row="0" Grid.Column="0" Kind="Home" Margin="10, 0, 10,0" Height="30" Width="30" Foreground="white"></material:MaterialIcon>
-                                        <Label Grid.Column="1" Grid.Row="0" FontWeight="Bold" Padding="0,4,0,0" Margin="0, 20">Home</Label>
-                                        <material:MaterialIcon Grid.Row="1" Grid.Column="0" Kind="Magnify" Margin="10, 0,0,0" Height="30" Width="30" Foreground="white"></material:MaterialIcon>
-                                        <Label Grid.Column="1" Grid.Row="1" FontWeight="Bold" Padding="0,4,0,0" Margin="0, 20">Search</Label>
+                                <Grid RowDefinitions="Auto, Auto, Auto, Auto, *" ColumnDefinitions="Auto, *">
+                                        <material:MaterialIcon Grid.Row="0" Grid.Column="0" Kind="DotsHorizontal" Margin="10, 20, 20,0" Height="30" Width="30" Foreground="white"></material:MaterialIcon>
+                                        <material:MaterialIcon Grid.Row="1" Grid.Column="0" Kind="Home" Margin="10, 0, 20,0" Height="30" Width="30" Foreground="white"></material:MaterialIcon>
+                                        <Label Grid.Column="1" Grid.Row="1" FontWeight="Bold" Padding="0,0,0,0" Margin="0, 12">Home</Label>
+                                        <material:MaterialIcon Grid.Row="2" Grid.Column="0" Kind="Magnify" Margin="10, 0,20,0" Height="30" Width="30" Foreground="gray"></material:MaterialIcon>
+                                        <Label Grid.Column="1" Grid.Row="2" FontWeight="Bold" Padding="0,0,0,0" Margin="0, 10" Foreground="gray">Search</Label>
+                                        <material:MaterialIcon Grid.Row="3" Grid.Column="0" Kind="Dresser" Margin="10, 0,20,0" Height="30" Width="30" Foreground="gray"></material:MaterialIcon>
+                                        <Label Grid.Column="1" Grid.Row="3" FontWeight="Bold" Padding="0,0,0,0" Margin="0, 10" Foreground="gray">Your Library</Label>
                                 </Grid>
                                
                         </Panel>
